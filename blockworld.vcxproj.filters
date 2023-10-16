@@ -9,7 +9,7 @@
       <UniqueIdentifier>{d807a330-965f-433b-baca-0c23c1382545}</UniqueIdentifier>
       <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
     </Filter>
-    <Filter Include="DrawStuff headers">
+    <Filter Include="DrawStuff">
       <UniqueIdentifier>{f1108a17-024d-4c9a-9cd3-a96e1ac301c4}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
@@ -42,7 +42,13 @@
       <Filter>Source Files</Filter>
     </ClInclude>
     <ClInclude Include="include\drawstuff\drawstuff.h">
-      <Filter>DrawStuff headers</Filter>
+      <Filter>DrawStuff</Filter>
+    </ClInclude>
+    <ClInclude Include="drawstuff\src\internal.h">
+      <Filter>DrawStuff</Filter>
+    </ClInclude>
+    <ClInclude Include="drawstuff\src\resource.h">
+      <Filter>DrawStuff</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -51,6 +57,12 @@
     </ClCompile>
     <ClCompile Include="cyd_model.cpp">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="drawstuff\src\drawstuff.cpp">
+      <Filter>DrawStuff</Filter>
+    </ClCompile>
+    <ClCompile Include="drawstuff\src\windows.cpp">
+      <Filter>DrawStuff</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

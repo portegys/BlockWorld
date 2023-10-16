@@ -25048,7 +25048,7 @@ static BOOL  ScaleImage(DIB2D&dib,GLTXTLOAD&p)
    GLint m_iHeight=dib.Info->biHeight;
    glGetIntegerv(GL_MAX_TEXTURE_SIZE, &glMaxTexDim);
 
-   if (XDMaxTexDim < glMaxTexDim) glMaxTexDim = XDMaxTexDim; else glMaxTexDim = glMaxTexDim;
+   glMaxTexDim = min(XDMaxTexDim, glMaxTexDim);
 
    if (m_iWidth <= glMaxTexDim)
       xPow2 = log((double)m_iWidth) / log(2.0);

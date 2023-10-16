@@ -90,7 +90,7 @@
       <SubSystem>Windows</SubSystem>
       <OutputFile>.\Debug\blockworld.exe</OutputFile>
       <AdditionalLibraryDirectories>lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>ode.lib;DrawStuff.lib;odbc32.lib;odbccp32.lib;opengl32.lib;glu32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>legacy_stdio_definitions.lib;ode.lib;odbc32.lib;odbccp32.lib;opengl32.lib;glu32.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
     </Link>
   </ItemDefinitionGroup>
@@ -142,6 +142,8 @@
     <ClInclude Include="body.hpp" />
     <ClInclude Include="cyd.hpp" />
     <ClInclude Include="cyd_model.h" />
+    <ClInclude Include="drawstuff\src\internal.h" />
+    <ClInclude Include="drawstuff\src\resource.h" />
     <ClInclude Include="frameRate.hpp" />
     <ClInclude Include="include\drawstuff\drawstuff.h" />
     <ClInclude Include="math_etc.h" />
@@ -156,6 +158,8 @@
     <ClCompile Include="cyd_model.cpp">
       <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
     </ClCompile>
+    <ClCompile Include="drawstuff\src\drawstuff.cpp" />
+    <ClCompile Include="drawstuff\src\windows.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="drawstuff\src\resources.rc">

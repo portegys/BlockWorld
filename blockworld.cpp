@@ -10,6 +10,8 @@
 #include <list>
 #include <vector>
 
+extern "C" { FILE _iob[3] = { __acrt_iob_func(0), __acrt_iob_func(1), __acrt_iob_func(2) }; }
+
 #ifdef _MSC_VER
 #pragma warning(disable:4244 4305)  // for VC++, no precision loss complaints
 #endif
