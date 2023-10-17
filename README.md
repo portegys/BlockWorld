@@ -3,7 +3,7 @@ Cyd takes on the Block World using ODE physics
 
 Build and run with Visual Studio.
 
-Instuctions:
+Instructions:
 <pre>
 To move slower, press q.
 To change object interaction mode, press space.
