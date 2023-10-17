@@ -10,7 +10,7 @@ To change object interaction mode, press space.
   Modes:
    collision.
    selection.
-To pickup an object, press [.
+To pickup an object in selection mode, press [ while touching object.
 To drop an object, press ].
 To fuse the selected objects, press f.
 To destroy the selected objects, press z.
